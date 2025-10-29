@@ -14,7 +14,35 @@ ul{
 li{
     list-style: none;
 }
-
+/* icons */
+.callbtn, .whatsappbtn{
+    position: fixed;
+left: 1rem;
+font-size: 2rem;
+padding:0.25rem 0.75rem;
+border-radius: 50%;
+z-index: 98;
+  }
+  @keyframes shadow {
+    0%{
+      box-shadow:  0px 4px 10px rgb(59, 149, 200);
+    }
+    100%{
+      box-shadow: rgb(59, 149, 200) 0px 4px 10px 0px, rgb(59, 149, 200) 0px 0px 0px 1.2652px, rgb(59, 149, 200) 0px 0px 0px 6.2652px, rgba(59, 149, 200, 0.745) 0px 0px 0px 12.5304px;
+    }
+  }
+  .callbtn{
+    background-color: blue;
+    color: #fff;
+    bottom: 8rem;
+    animation: shadow 1.5s ease-out infinite;
+     /* box-shadow: rgb(59, 149, 200) 0px 4px 10px 0px, rgb(59, 149, 200) 0px 0px 0px 1.2652px, rgb(59, 149, 200) 0px 0px 0px 6.2652px, rgba(59, 149, 200, 0.745) 0px 0px 0px 12.5304px; */
+  }
+  .whatsappbtn{
+     background-color: green;
+    color: #fff;
+    bottom: 2rem;
+  }
 /* nav */
 nav{
     background: #115478;
@@ -176,14 +204,15 @@ color: #fff;
 }
 /* banner */
 .banners{
-    background-image: url(../images/b1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 30vmax; */
     width: 100%;
     height: 100vmin;
+   
 }
+
 .banners h1{
 font-size: 4rem;
 }
@@ -196,7 +225,12 @@ font-size: 4rem;
 .banner3{
     background-image: url(../images/b3.jpg);
 }
-
+.banner4{
+    background-image: url(../images/banner1.jpg);
+}
+.banner5{
+    background-image: url(../images/banner2.jpg);
+}
 .banners>div{
     height: 100%;
     width: 100%;
@@ -223,6 +257,40 @@ font-size: 1rem;
     }
 
 }
+
+@keyframes textSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+.banners h1, .banners h5, .banners .btndesign{
+    opacity: 0;
+    visibility: hidden;
+}
+.animate-text h1,
+.animate-text h5,
+.animate-text a {
+     transform: translateY(50px);
+  animation: textSlideUp 1.5s ease forwards;
+}
+@keyframes zoomInBg {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.carousel-item.active .banners {
+  animation: zoomInBg 4s ease forwards;
+}
+
 
 /* book your service today */
 
@@ -254,7 +322,39 @@ font-size: 1rem;
 
 
 /* about on home page */
-
+.aboutusheading{
+    position: relative;
+    padding-bottom: 8px;
+}
+.aboutusheading::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 4px;
+    background-color: #fff;
+    z-index: 2;
+    animation: move2 5s linear infinite;
+}
+@keyframes move2 {
+    0%,100%{
+        left: 0;
+    }
+    50%{
+        left: 62px;
+    }
+}
+.aboutusheading::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 70px;
+    background-color: #08293a;
+    z-index: 1;
+}
 .yrsexp{
     position: absolute;
     top: 0;
@@ -394,13 +494,50 @@ transform: translate(100%, -50%);
 }
 
 footer{
-    background-color: cornsilk;
+    background-color: #abb4b1;
 }
-footer li{
+footer h4{
+    color: #115478;
+    position: relative;
+    padding-bottom: 8px;
+}
+footer h4::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 4px;
+    background-color: #fff;
+    z-index: 2;
+    animation: move 5s linear infinite;
+}
+@keyframes move {
+    0%,100%{
+        left: 0;
+    }
+    50%{
+        left: 92px;
+    }
+
+}
+footer h4::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100px;
+    background-color: #115478;
+    z-index: 1;
+}
+footer li a{
     transition: 0.3s;
     line-height: 1.75;
+    color: #115478;
+    display: inline-block;
 }
-footer li:hover {
+footer li a:hover {
 transform: translateX(10px);
-color: #115478;
+color: #08293a;
 }
