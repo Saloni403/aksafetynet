@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,24 +46,14 @@
   <header class="py-2">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
-        <img src="web/images/1. PNG.png" width="80px" alt="">
+        <img src="web/images/1. PNG.png" width="80px" alt="" style="cursor: pointer;" onclick="location.href='index.html'">
         <div class="d-lg-flex d-none">
           <ul class="d-flex align-items-center justify-content-between">
-            <li class="bdrbtn"><a href="">Home</a></li>
-            <li class="bdrbtn"><a href="">About Us</a></li>
-            <li class="dropdown bdrbtn"><a href="">Services <i class="bi bi-caret-right-fill"></i></a>
-              <ul class="sublist">
-                <li><a href="">Balcony Safety Net</a></li>
-                <li><a href="">Invisible Grill</a></li>
-                <li><a href="">Industrial Bird Control Net</a></li>
-                <li><a href="">Nylon Pigoen Net</a></li>
-                <li><a href="">Common Area Pigeon Net</a></li>
-                <li><a href="">Monkey Safety Net</a></li>
-              </ul>
-            </li>
-            <li class="bdrbtn"><a href="">Blogs</a></li>
-            <li class="bdrbtn"><a href="">Contact Us</a></li>
-
+            <li class="bdrbtn"><a href="index.html">Home</a></li>
+            <li class="bdrbtn"><a href="about.html">About Us</a></li>
+            <li class="bdrbtn"><a href="services.html">Services</a></li>
+            <li class="bdrbtn"><a href="blogs.html">Blogs</a></li>
+            <li class="bdrbtn"><a href="contact.html">Contact Us</a></li>
           </ul>
           <a href="" class="btndesign ms-4">Get Quote <i class="bi bi-arrow-right-short"></i></a>
         </div>
@@ -476,9 +465,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  AOS.init();
 
     $('.autoplay').slick({
       slidesToShow: 3,
