@@ -220,6 +220,7 @@ color: #fff;
 
 .banners h1{
 font-size: 4rem;
+
 }
 .banner1{
     background-image: url(../images/b1.jpg);
@@ -239,13 +240,13 @@ font-size: 4rem;
 .banners>div{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.22);
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content:center ;
 padding-left: 10% ;
-
+text-shadow: 0 4px 25px black;
 }
 .banners .btndesign{
     width: fit-content;
