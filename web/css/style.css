@@ -96,12 +96,16 @@ header ul .bdrbtn:hover::after{
 }
 header ul li a{
    font-size: 1.25rem;
-   color: #fff;
+   color: #115478;
    font-weight: 500;
 }
 .menuicon{
-    color: #fff;
+    color: #115478;
     font-size: 2rem;
+    border: 2px solid #115478;
+    border-radius: 10px;
+    padding: 0 0.2rem;
+    background-color: #fff;
 }
 .btndesign{
     background-color: #115478;
