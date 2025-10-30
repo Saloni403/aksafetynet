@@ -540,6 +540,7 @@ footer li a{
     transition: 0.3s;
     line-height: 1.75;
     color: #115478;
+    font-weight: 600;
     display: inline-block;
 }
 footer li a:hover {
