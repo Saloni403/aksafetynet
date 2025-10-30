@@ -67,7 +67,9 @@ nav a p{
 
 /* header */
 header{
-    background-color: #98a4a8cf;
+    /* background-color: #7b949ccf; */
+    background-color: #a7c9d5cf;
+    /* background-color: rgb(175, 221, 239); */
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
@@ -500,7 +502,7 @@ transform: translate(100%, -50%);
 }
 
 footer{
-    background-color: #abb4b1;
+    background-color: #a7c9d5cf;
 }
 footer h4{
     color: #115478;
