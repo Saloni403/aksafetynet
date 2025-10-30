@@ -575,7 +575,7 @@ color: #08293a;
          }
          @media (max-width:576px) {
             .smallbanner div h1{
-font-size: 1.25rem;
+font-size: 2rem;
     }
          }
 
@@ -603,7 +603,7 @@ font-size: 1.25rem;
             background-color: #115478;
             box-shadow: -5px 5px 0 #39b4cb;
             border-radius: 50%;
-            padding:0.5rem 0.8rem ;
+            padding:0.5rem 0.9rem ;
            margin-bottom: 2rem;
            /* transition: 0.3s; */
          }
@@ -622,3 +622,33 @@ font-size: 1.25rem;
             margin-bottom: 0;
          }
          
+         .gitouch input , .gitouch textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 10px;
+/* box-shadow: 0px 8px 20px rgba(128, 128, 128, 0.449); */
+/* border: none; */
+/* border-color: whitesmoke !important; */
+border-color: light-dark(#39b4cb,#39b4cb);
+         }
+          .gitouch input:focus , .gitouch textarea:focus{
+             box-shadow: 0px 8px 20px rgba(128, 128, 128, 0.449);
+             /* border-color:none !important; */
+          }
+       .gitouch input:focus-visible , .gitouch textarea:focus-visible{
+            border-color: none !important;
+          }
+          .addressdiv .row{
+            box-shadow: 0 4px 12px grey;
+          }
+          iframe{
+            height: 450px;
+          }
+          @media (max-width:576px) {
+            iframe{
+            height: 300px;
+          } 
+           .addressdiv .row{
+            box-shadow: none;
+          }
+          }

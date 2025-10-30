@@ -45,3 +45,17 @@ function openMenu(){
     const firstText = carousel.querySelector('.carousel-item.active .banners > div');
     if (firstText) firstText.classList.add('animate-text');
   });
+
+
+document.querySelectorAll(".callbtn").forEach(click=>{
+  click.addEventListener("click",()=>{
+    // window.location.href='tel:+918797376640';
+      window.open('tel:+918797376640', '_blank');
+  })
+})
+
+document.querySelectorAll(".whatsappbtn").forEach(click=>{
+  click.addEventListener("click",()=>{
+      window.open('https://wa.me/919110112300', '_blank');
+  })
+})
