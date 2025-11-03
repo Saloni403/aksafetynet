@@ -170,6 +170,14 @@ transform: rotate(90deg);
 .sublist li:hover a{
     color: #fff;
 }
+.logotext{
+    font-size: 12px;
+    font-weight: 600;
+    color:  #115478;
+    margin-left: 8px;
+    margin-bottom: 0;
+    text-align: center;
+}
 
 /* menu */
 .menu{
@@ -229,16 +237,16 @@ font-size: 4rem;
 
 }
 .banner1{
-    background-image: url(../images/b1.jpg);
+    background-image: url(../images/b2.jpg);
 }
 .banner2{
-    background-image: url(../images/b2.jpg);
+    background-image: url(../images/banner1.jpg);
 }
 .banner3{
     background-image: url(../images/b3.jpg);
 }
 .banner4{
-    background-image: url(../images/banner1.jpg);
+    background-image: url(../images/bird.jpg);
 }
 .banner5{
     background-image: url(../images/banner2.jpg);
