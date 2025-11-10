@@ -791,7 +791,9 @@ border-color: light-dark(#39b4cb,#39b4cb);
             width: 260px;
             z-index: 99;
           }
-          
+          .bloglist ul li.active {
+  background-color: #1f87be;
+}
           .bloglist ul li{
             font-size: 1.1rem;
             font-weight: 600;
