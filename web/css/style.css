@@ -757,3 +757,73 @@ border-color: light-dark(#39b4cb,#39b4cb);
             box-shadow: none;
           }
           }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          /* blog */
+          .filter{
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            width: fit-content;
+          }
+          .bloglist{
+            background-color: #115478;
+            color: #fff;
+            height: 100%;
+            line-height: 2;
+            width: 260px;
+            z-index: 99;
+          }
+          
+          .bloglist ul li{
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-bottom: 1px solid #fff;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+          }
+            .bloglist ul li:hover{
+                background-color: #1f87be;
+            }
+          @media (max-width:1200px) {
+             .bloglist.onmobile {
+  position: fixed;
+  right: -300px;
+  top: 90px;
+  width: 260px;
+  height: calc(100vh - 90px); /* ensure it fills the viewport height */
+  overflow-y: auto; /* allows full scroll */
+  z-index: 999; /* keep above other elements */
+  transition: right 0.3s ease-in-out;
+}
+
+/* open state */
+.bloglist.onmobile.open {
+  right: 0;
+}
+
+/* Optional: prevent background scroll when sidebar is open */
+/* body.menu-open {
+  overflow: hidden;
+} */
+
+
+          }
+        
