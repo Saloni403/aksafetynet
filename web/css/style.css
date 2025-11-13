@@ -251,6 +251,9 @@ font-size: 4rem;
 .banner5{
     background-image: url(../images/banner2.jpg);
 }
+.banner6{
+    background-image: url(../images/banner6img.jpeg);
+}
 .banners>div{
     height: 100%;
     width: 100%;
